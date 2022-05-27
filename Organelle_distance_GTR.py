@@ -62,19 +62,11 @@ voxel_dims = [0.05,0.02,0.02] #um
 voxel_ratio = voxel_dims[0]/voxel_dims[1]
 voxel_iso_dims = [0.05,0.05,0.05] #um
 
-
-# In[2]:
-
-
 # Load image
 cell_img = img_as_ubyte(io.imread('/home/guillaume/Downloads/RHarwood-cell/D2C2/D2C2_merged-cropped.tif'))
 print(np.unique(cell_img))
 print(cell_img.shape)
 io.imshow(cell_img[200])
-
-
-# In[3]:
-
 
 # Create isotropic image
 print('Current anisotropic shape:', cell_img.shape)
